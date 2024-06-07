@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/9c/World_Flag_map.png");
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header> 
+        <nav> 
+             <ul>
+                  <li> <a href="#inicio">Inicio</a></li>
+                  <li> <a href="#contacto">Contacto</a></li>
+                  <li style="float:right"><a class="active" href="#galeria">Galeria</a></li>
+                  <li> <a href="#nosotros">Nosotros</a></li>
+                  <li style="float:right"><a class="active" href="#productos">Productos</a></li>
+             </ul>
+        </nav>
+        <form action="/procesar.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"/>
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email"/>
+            <label for="phone">Telefono:</label>
+            <input type="phone" id="phone" name="phone"/>
+            <label for="escribenos">Comentario:</label>
+            <textarea id="comentario" name="comentario"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+
+<p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52328.87714015287!2d-54.952021289275876!3d-34.942700295370734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9575059ec8c40bbd%3A0x9bdd0183c2d3cf93!2sPunta%20del%20Este%2C%20Departamento%20de%20Maldonado!5e0!3m2!1ses-419!2suy!4v1715100285666!5m2!1ses-419!2suy" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</p>
+        <footer> 
+            <p> Derechos Resevados S.A. </p>
+        </footer>
+    
+</body>
+</html>
